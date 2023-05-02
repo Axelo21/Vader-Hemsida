@@ -8,22 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/894de8aefb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <nav>
+        <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+    </nav>
+    <div class="pic">
+        <div class="locationPic"></div>
+    </div>
     <div class="card">
-        <div class="search" class="search-bar">
-            <input type="text">
+        <div class="search">
+            <input type="text" class="input-search-bar" placeholder="Search">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="weather">
+        <div class="weather loading">
             <h2 class="city">Weather in Stockholm</h2>
-            <h1 class="temp">21°C</div>
+            <h1 class="temp">10'C</div>
             <img src="" alt="" class="icon">
-            <div class="description">Cloudy</div>
-            <div class="humidity">Humidity: 60%</div>
-            <div class="wind">Wind speed: 6.2 km/h</div>
+            <div class="description">Clear Sky</div>
+            <div class="humidity">60%</div>
+            <div class="wind">10 m/s</div>
         </div>
     </div>
 </body>
