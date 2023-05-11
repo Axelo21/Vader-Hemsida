@@ -294,7 +294,7 @@ h1.temp {
     border-radius: 30px;
     width: 100%;
     max-width: 400px;
-    min-width: 300px;
+    min-width: 380px;
     margin: 1em;
     height: 340px;
 }
@@ -326,20 +326,20 @@ footer{
     }
 
     .city1{
-      margin-top: 250px;
+      margin-top: 500px;
     }
 
     .famousCity{
-      height: 220px;
+      height: 320px;
     }
 
     
     footer{
-      bottom: -300px;
+      bottom: -350px;
     }
 
     .famous-cities-footer{
-      bottom: -400px;
+      bottom: -600px;
     }
 
     .pic{

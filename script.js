@@ -6,6 +6,8 @@ let weather = {
         .then((data) => this.displayWeather(data));
     },
     displayWeather: function(data){
+
+        console.log(data)
         const { name } = data;
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
@@ -20,10 +22,13 @@ let weather = {
         document.querySelector(".wind").innerText = "Wind speed: " + Math.round(speed) + " m/s"
 
         document.querySelector(".locationPic").style.backgroundImage = 'url(https://source.unsplash.com/1920x1080/?' + name + ")"
+
+
+
     },
 
     search: function(){
-        this.fetchWeather(document.querySelector(".input-search-bar").value)
+        this.fetchWeather(document.querySelector(".input-search-bar").value, "index")
     }
 }
 
@@ -37,6 +42,7 @@ document.querySelector(" .input-search-bar").addEventListener("keyup", function(
 })
 
 weather.fetchWeather("Vaxholm")
+
 
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
