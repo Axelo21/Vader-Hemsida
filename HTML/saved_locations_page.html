@@ -15,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <script src="../JS/script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/894de8aefb.js"
       crossorigin="anonymous"
@@ -43,27 +42,47 @@
       </nav>
     </header>
     <main>
-      <div class="flexboxElements">
-        <div class="pic">
-          <div class="locationPic"></div>
-        </div>
-        <div class="card">
-          <div class="search">
-            <input type="text" class="input-search-bar" placeholder="Search" />
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          </div>
-          <div>
-            <h2 class="city">Couldn't Find Weather</h2>
-            <h1 class="temp">--</h1>
-            <img src="" alt="Weather Icon" class="icon" />
-            <div class="description">--</div>
-            <div class="humidity">--%</div>
-            <div class="wind">-- m/s</div>
-          </div>
-        </div>
-      </div>
+      <table>
+        <caption>
+          Saved Locations
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Location</th>
+            <th scope="col">Max temp</th>
+            <th scope="col">Min temp</th>
+            <th scope="col">Max rain</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row_grey">
+            <td data-label="Location">Stockholm</td>
+            <td data-label="Max temp">35.4°C</td>
+            <td data-label="Min temp">-28.2°C</td>
+            <td data-label="Max rain">68 mm</td>
+          </tr>
+          <tr>
+            <td scope="row" data-label="Location">Berlin</td>
+            <td data-label="Max temp">37.9°C</td>
+            <td data-label="Min temp">-26°C</td>
+            <td data-label="Max rain">125 mm</td>
+          </tr>
+          <tr class="row_grey">
+            <td scope="row" data-label="Location">New York City</td>
+            <td data-label="Max temp">41.1°C</td>
+            <td data-label="Min temp">-26.1°C</td>
+            <td data-label="Max rain">210 mm</td>
+          </tr>
+          <tr>
+            <td scope="row" data-label="Acount">Los Angeles</td>
+            <td data-label="Due Date">43.3°C</td>
+            <td data-label="Amount">-2.8°C</td>
+            <td data-label="Period">149 mm</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
-    <footer id="index_footer">
+    <footer id="table_footer">
       <div class="footer-content">
         <h3>WeatherHub</h3>
         <p></p>

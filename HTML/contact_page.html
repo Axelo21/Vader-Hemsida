@@ -1,54 +1,105 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <title>WeatherHub</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/894de8aefb.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/894de8aefb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-
-    
-    <nav>
+      <nav>
         <ul class="menu">
           <li class="logo"><a href="index.html">WeatherHub</a></li>
           <li class="item"><a href="index.html">Home</a></li>
           <li class="item"><a href="famous_cities.html">Famous Cities</a></li>
-          <li class="item"><a href="#">Saved Locations</a></li>
-          <li class="item"><a href="#">Contact</a>
+          <li class="item">
+            <a href="saved_locations_page.html">Saved Locations</a>
           </li>
+          <li class="item"><a href="contact_page.html">Contact</a></li>
           <li class="item button"><a href="login_page.html">Log In</a></li>
-          <li class="item button secondary"><a href="signup_page.html">Sign Up</a></li>
-          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+          <li class="item button secondary">
+            <a href="signup_page.html">Sign Up</a>
+          </li>
+          <li class="toggle">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </li>
         </ul>
       </nav>
     </header>
-    <div class="wpcf7" id="f156-p143-o1 formwrap">
-        <form action="index.html" method="post" class="form" novalidate="novalidate">
-            <p>
-               <span class="form-control-wrap Name">
-                 <input type="text" name="Name" value="" size="40" class="nameinput form-control text validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name">
-              </span>
-              <span class="form-control-wrap Email">
-                <input type="email" name="Email"  size="40" class="emailinput form-control text email validates-as-required validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email">
-              </span>
-                <span class="form-control-wrap Subject flat">
-                    <input type="text" name="Subject"  size="40" class="emailinput form-control text email validates-as-required validates-as-email" aria-required="true" aria-invalid="false" placeholder="Subject">
-                </span>
-              <span class="form-control-wrap Message">
-                <textarea name="Message" cols="40" rows="10" class="form-control textarea" aria-invalid="false" placeholder="Message"></textarea>
-              </span>
-              <input type="submit" value="Send" class="form-control submit btn">
+    <main>
+      <div class="form_div" id="form_div_id formwrap">
+        <form
+          action="index.html"
+          method="post"
+          class="form"
+          novalidate="novalidate"
+        >
+          <p>
+            <span class="form-control-wrap Name">
+              <input
+                type="text"
+                name="Name"
+                value=""
+                size="40"
+                class="nameinput form-control text validates-as-required"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="Name"
+              />
+            </span>
+            <span class="form-control-wrap Email">
+              <input
+                type="email"
+                name="Email"
+                size="40"
+                class="emailinput form-control text email validates-as-required validates-as-email"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="Email"
+              />
+            </span>
+            <span class="form-control-wrap Subject flat">
+              <input
+                type="text"
+                name="Subject"
+                size="40"
+                class="emailinput form-control text email validates-as-required validates-as-email"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="Subject"
+              />
+            </span>
+            <span class="form-control-wrap Message">
+              <textarea
+                name="Message"
+                cols="40"
+                rows="10"
+                class="form-control textarea"
+                aria-invalid="false"
+                placeholder="Message"
+              ></textarea>
+            </span>
+            <input type="submit" value="Send" class="form-control submit btn" />
           </p>
-          <div class="response-output display-none">
-          </div>
-      </form>
-    </div>
+          <div class="response-output display-none"></div>
+        </form>
+      </div>
+    </main>
     <script src="../JS/script_header.js"></script>
-    </body>
+  </body>
 </html>
